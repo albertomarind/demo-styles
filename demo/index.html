@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    #color-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .color-div {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      margin: 20px ;
+    }
+    .color-item {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../bpwc-styles.js';
+
+    render(
+      html`
+        <bpwc-styles>
+          <div id="color-list">
+            <div id="primary">
+              <h1>Primary</h1>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-bleu);">
+                </div>
+                <div>
+                  <h5>Bleu</h5>
+                  <p>#213E7F</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-sea);">
+                </div>
+                <div>
+                  <h5>Sea</h5>
+                  <p>#5082BE</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-sky);">
+                </div>
+                <div>
+                  <h5>Sky</h5>
+                  <p>#E1EBF5</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-blanc);">
+                </div>
+                <div>
+                  <h5>Blanc</h5>
+                  <p>#FFFFFF</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-noir-100);">
+                </div>
+                <div>
+                  <h5>Noir 100</h5>
+                  <p>#000000</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-noir-60);">
+                </div>
+                <div>
+                  <h5>Noir 60</h5>
+                  <p>#4C4C4C</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-noir-40);">
+                </div>
+                <div>
+                  <h5>Noir 40</h5>
+                  <p>#7F7F7F</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-noir-20);">
+                </div>
+                <div>
+                  <h5>Noir 20</h5>
+                  <p>#A5A5A5</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-noir-10);">
+                </div>
+                <div>
+                  <h5>Noir 10</h5>
+                  <p>#EDEDED</p>
+                </div>
+              </div>
+              <div class="color-item">
+                <div class="color-div" style="background: var(--bpwc-theme-primary-fresh-berry);">
+                </div>
+                <div>
+                  <h5>Fresh Berry</h5>
+                  <p>#B02A87</p>
+                </div>
+              </div>
+            </div>
+            <div id="secondary">
+              <h1>Secondary</h1>
+            </div>
+            <div id="signal">
+              <h1>Signal</h1>
+            </div>
+          </div>
+        </bpwc-styles>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
