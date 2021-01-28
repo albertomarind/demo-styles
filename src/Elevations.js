@@ -4,7 +4,7 @@ import {
 
 export const Elevations = css `
 
-    [class^="elevation--"]{
+    [class*="elevation--"]{
         border-radius: 8px;
     }
 

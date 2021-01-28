@@ -3,7 +3,7 @@ import {
 } from 'lit-element';
 
 export const Strokes = css `
-  [class^="stroke--"]{
+  [class*="stroke--"]{
     border-width: 1px;
     border-style: solid;
   }
