@@ -3,54 +3,55 @@ import {
 } from 'lit-element';
 
 export const Elevations = css `
-    .elevation {
+
+    [class^="elevation--"]{
         border-radius: 8px;
     }
 
-    .elevation[color="noir-sm"]{
+    .elevation--noir-sm{
         box-shadow: 0px 2px 4px rgba(var(--bpwc-theme-primary-noir-100-rgb), 0.16);
     }
 
-    .elevation[color="noir-md"]{
+    .elevation--noir-md{
         box-shadow: 0px 4px 4px rgba(var(--bpwc-theme-primary-noir-100-rgb), 0.16);
     }
 
-    .elevation[color="noir-lg"]{
+    .elevation--noir-lg{
         box-shadow: 0px 6px 10px rgba(var(--bpwc-theme-primary-noir-100-rgb), 0.16);
     }
 
-    .elevation[color="noir-el"]{
+    .elevation--noir-el{
         box-shadow: 0px 32px 32px -4px rgba(var(--bpwc-theme-primary-noir-100-rgb), 0.12);
     }
 
-    .elevation[color="bleu-sm"]{
+    .elevation--bleu-sm{
         box-shadow: 0px 2px 4px rgba(var(--bpwc-theme-primary-bleu-rgb), 0.16);
     }
 
-    .elevation[color="bleu-md"] {
+    .elevation--bleu-md {
         box-shadow: 0px 4px 4px rgba(var(--bpwc-theme-primary-bleu-rgb), 0.12);
     }
 
-    .elevation[color="bleu-lg"] {
+    .elevation--bleu-lg {
         box-shadow: 0px 6px 10px rgba(var(--bpwc-theme-primary-bleu-rgb), 0.12);
     }
 
-    .elevation[color="bleu-el"] {
+    .elevation--bleu-el {
         box-shadow: 0px 32px 32px -4px rgba(var(--bpwc-theme-primary-bleu-rgb), 0.12);
     }
 
-    .elevation[color="fresh-berry-sm"] {
+    .elevation--fresh-berry-sm {
         box-shadow: 0px 2px 4px rgba(var(--bpwc-theme-primary-fresh-berry-rgb), 0.16);
     }
 
-    .elevation[color="fresh-berry-md"] {
+    .elevation--fresh-berry-md {
         box-shadow: 0px 4px 4px rgba(var(--bpwc-theme-primary-fresh-berry-rgb), 0.12);
     }
 
-    .elevation[color="fresh-berry-lg"] {
+    .elevation--fresh-berry-lg {
         box-shadow: 0px 6px 10px rgba(var(--bpwc-theme-primary-fresh-berry-rgb), 0.12);
     }
-    .elevation[color="fresh-berry-el"] {
+    .elevation--fresh-berry-el {
         box-shadow: 0px 32px 32px -4px rgba(var(--bpwc-theme-primary-fresh-berry-rgb), 0.12);
     }
   `;
